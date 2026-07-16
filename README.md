@@ -1,5 +1,5 @@
-# Decision Path Calculator
+# Calculator Using Nested If Statements
 
-This version keeps the original nested-if calculator and adds an interface that highlights the exact conditional branch used for each operation. It supports decimals, instant recalculation, responsive controls, and division-by-zero feedback.
+This calculator uses an `if` / `else if` chain to choose between addition, subtraction, multiplication, and division.
 
-Open `index.html` for the UI or use the included CMake project for the console version.
+The page in `index.html` shows which condition is selected for each calculation. The C++ version accepts decimal values and checks for invalid input and division by zero.
