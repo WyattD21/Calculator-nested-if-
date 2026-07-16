@@ -2,13 +2,19 @@
 using namespace std;
 
 int main() {
-    int num1, num2, result;
+    double num1, num2, result;
     char op;
 
     cout << "Enter the first number: ";
-    cin >> num1;
+    if (!(cin >> num1)) {
+        cerr << "Error: Please enter a valid number." << endl;
+        return 1;
+    }
     cout << "Enter the second number: ";
-    cin >> num2;
+    if (!(cin >> num2)) {
+        cerr << "Error: Please enter a valid number." << endl;
+        return 1;
+    }
     cout << "Enter the operator (+, -, *, /): ";
     cin >> op;
 
@@ -39,4 +45,3 @@ int main() {
 
     return 0;
 }
-
